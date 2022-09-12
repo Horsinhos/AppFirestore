@@ -3,7 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
 }
-
 android {
     compileSdk 32
 
@@ -32,6 +31,13 @@ android {
     }
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
 
 dependencies {
 
